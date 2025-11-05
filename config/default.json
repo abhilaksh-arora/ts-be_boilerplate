@@ -1,0 +1,6 @@
+{
+  "serviceName": "ts-be_boilerplate",
+  "serviceUrl": "",
+  "timezone": "Asia/Kolkata",
+  "logDir": "/var/log/ts-be_boilerplate"
+}

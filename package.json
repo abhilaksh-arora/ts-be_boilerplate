@@ -1,0 +1,59 @@
+{
+  "name": "ts-be_boilerplate",
+  "version": "1.0.0",
+  "description": "A modern, production-ready boilerplate for building scalable, secure, and maintainable RESTful APIs using Express.js and TypeScript, with automated code quality checks powered by Biome.",
+  "author": "Abhilaksh Arora <abhilaksharora@gmail.com>",
+  "license": "MIT",
+  "main": "src/index.ts",
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "dev": "nodemon src/index.ts",
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "format": "npx @biomejs/biome format --write ./src",
+    "vercel-build": "echo 'vercel-build'"
+  },
+  "lint-staged": {
+    "*.ts": "npm run format && npm run typecheck"
+  },
+  "keywords": [],
+  "dependencies": {
+    "axios": "^1.12.2",
+    "biome": "^0.3.3",
+    "config": "^3.3.12",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "debug": "^4.4.0",
+    "dotenv": "^16.6.1",
+    "express": "^4.21.2",
+    "express-session": "^1.18.2",
+    "helmet": "^8.0.0",
+    "http-graceful-shutdown": "^3.1.14",
+    "knex": "^3.1.0",
+    "luxon": "^3.7.2",
+    "morgan": "^1.10.0",
+    "multer": "^2.0.2",
+    "pg": "^8.16.3",
+    "verror": "^1.10.1",
+    "winston": "^3.17.0",
+    "winston-daily-rotate-file": "^5.0.0",
+    "zod": "^3.24.1",
+    "zod-validation-error": "^3.4.0"
+  },
+  "devDependencies": {
+    "@types/config": "^3.3.5",
+    "@types/cookie-parser": "^1.4.8",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/luxon": "^3.7.1",
+    "@types/morgan": "^1.9.9",
+    "@types/multer": "^2.0.0",
+    "@types/node": "^22.10.5",
+    "@types/verror": "^1.10.11",
+    "husky": "^8.0.0",
+    "lint-staged": "^15.3.0",
+    "nodemon": "^3.1.9",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3"
+  }
+}
