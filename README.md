@@ -98,7 +98,7 @@ Follow these steps to set up your own project using this boilerplate without aff
 ### 1️⃣ Clone the Boilerplate
 
 ```bash
-git clone https://github.com/arnavsharma2711/express-ts-boilerplate.git
+git clone https://github.com/abhilaksh-arora/ts-be_boilerplate.git
 ```
 
 ### 2️⃣ Enter the Project Folder
