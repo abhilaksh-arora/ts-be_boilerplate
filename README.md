@@ -85,31 +85,85 @@ ts-be_boilerplate/
 
 ---
 
-## ⚙️ Getting Started
+Absolutely 👍 — here’s a clean and nicely formatted **README section** you can directly paste under your project setup instructions (e.g., after “Getting Started”).
 
-### 1️⃣ Clone the Repository
+It fits your current README style perfectly 👇
+
+---
+
+## 🪜 Step-by-Step: Using This Boilerplate Safely
+
+Follow these steps to set up your own project using this boilerplate without affecting the original repository.
+
+### 1️⃣ Clone the Boilerplate
 
 ```bash
-git clone https://github.com/abhilaksh-arora/ts-be_boilerplate.git
-cd ts-be_boilerplate
+git clone https://github.com/arnavsharma2711/express-ts-boilerplate.git
 ```
 
-### 2️⃣ Install Dependencies
+### 2️⃣ Enter the Project Folder
 
 ```bash
-npm install
+cd express-ts-boilerplate
 ```
 
-### 3️⃣ Configure Environment
+### 3️⃣ Remove the Existing Git History
+
+Remove the original Git configuration so your commits don’t mix with the boilerplate’s history.
 
 ```bash
-cp .env.example .env
+rm -rf .git
 ```
 
-### 4️⃣ Run in Development
+### 4️⃣ Initialize a New Git Repository
+
+Start fresh with your own Git setup.
 
 ```bash
-npm run dev
+git init
+```
+
+### 5️⃣ Add All Files and Make an Initial Commit
+
+```bash
+git add .
+git commit -m "Initial commit from Express + TypeScript + Biome boilerplate"
+```
+
+### 6️⃣ Create a New Repository on GitHub
+
+Go to 👉 [https://github.com/new](https://github.com/new)
+and create a new repository (e.g., `my-api-backend`).
+
+### 7️⃣ Add Your New Remote Origin
+
+Replace `<your-username>` and `<your-repo-name>` with your actual details:
+
+```bash
+git remote add origin https://github.com/<your-username>/<your-repo-name>.git
+```
+
+Verify that the new remote has been added:
+
+```bash
+git remote -v
+```
+
+### 8️⃣ Push Your New Project
+
+```bash
+git branch -M main
+git push -u origin main
+```
+
+---
+
+💡 **Tip:**
+If you ever want to check or change the remote origin later:
+
+```bash
+git remote -v               # view current remote
+git remote set-url origin https://github.com/<new-repo>.git
 ```
 
 ---
